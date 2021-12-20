@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <title>My test Page</title>
+    <style>
+        html{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: white
+        }
+        body{
+            width: 100%;
+            margin: 0 auto;
+            background-color: chocolate;
+            padding: 0 20px 20px 20px;
+            border: 5px solid black;
+        }
+        h1{
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            color: #a8c6e2;
+            text-shadow: 3px 3px 3px 1px white;
+        }
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: rgb(133, 89, 81);
+            font-weight: bold;
+            padding: 10px;
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .mainContainerItem{
+            flex: 4 0px;
+            text-align: left;
+            background-color: deepskyblue;
+            order: 2;
+        }
+        
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 1px solid green;
+        }
+        .sideBarLeftItem{
+            background-color: gold;
+            order: 1;
+        }
+        .sideBarRightItem{
+            background-color: hotpink;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerContainer"><h1>Bridgelab is cool</h1></header>
+    <div class="mainContainer">
+        <section class="mainContainerItem">
+            <article>
+                <h2>First Article</h2>
+                <p>Demo text</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>Demo text</p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>Demo text</p>
+            </article>
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <ul>
+        <li>technologists</li>
+        <li>thinkers</li>
+        <li>builder</li>
+    </ul>
+    
+    </div>
+<footer class="footerContainer">
+    <p><a href="https://www.bridgelab.com">Bridgelab</a> to learn more <strong>Employbility</strong></p>
+</footer>
+</body>
+</html>
